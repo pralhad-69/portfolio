@@ -1,0 +1,325 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00aaff, #0047ab); /* Electric blue gradient background */
+    color: #100101; /* Change text color to white for better contrast */
+}
+
+header {
+    background: rgba(255, 255, 255, 0.2); /* Glassy effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f61; /* Retro hover color */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Glassy effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.project {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border for projects */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Glassy effect */
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #ff4c3b;
+}
+
+.other-projects-button {
+    display: block;
+    margin: 20px auto;
+    background: #ff6f61; /* Retro button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.other-projects-button:hover {
+    background: #ff4c3b; /* Darker shade on hover */
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.2); /* Glassy effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    color: #333;
+    border-radius: 10px;
+}
+
+button {
+    background: #ff6f61; /* Retro button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #ff4c3b; /* Darker shade on hover */
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #2c003e, #4a004d); /* Dark retro gradient background */
+    color: #f7f8f8; /* Electric blue text color */
+}
+
+header.dark-mode {
+    background: rgba(255, 255, 255, 0.1); /* Dark glassy effect */
+    color: #00aaff; /* Electric blue text color */
+}
+/* Dark Mode Navigation Links */
+nav ul li a.dark-mode {
+    color: #00aaff; /* Electric blue for links in dark mode */
+}
+
+nav ul li a.dark-mode:hover {
+    color: #ff6f61; /* Retro hover color */
+}
+
+/* Default Navigation Links */
+nav ul li a {
+    color: #f1f4f5; /* White color for links in light mode */
+}
+
+section.dark-mode {
+    background: rgba(255, 255, 255, 0.1); /* Dark glassy effect for sections */
+    color: #00aaff; /* Electric blue text color */
+}
+
+.project.dark-mode {
+    background: rgba(255, 255, 255, 0.1); /* Lighter glassy effect for projects */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for projects */
+}
+
+#contact.dark-mode {
+    background: rgba(255, 255, 255, 0.1); /* Dark glassy effect for contact section */
+}
+
+#contact-form input.dark-mode, 
+#contact-form textarea.dark-mode {
+    background: rgba(255, 255, 255, 0.2); /* Lighter background for inputs in dark mode */
+    color: #00aaff; /* Electric blue text color */
+    border: 1px solid #00aaff; /* Electric blue border */
+}
+
+#contact-form button.dark-mode {
+    background: #00aaff; /* Electric blue button */
+    color: white; /* White text for button */
+}
+
+#contact-form button.dark-mode:hover {
+    background: #007bb5; /* Darker shade on hover */
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Glassy effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    color: #00aaff; /* Electric blue text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+
+/* contact styling */
+#contact {
+    background: rgba(255, 255, 255, 0.3); /* Glassy effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Increased padding for better spacing */
+    margin: 20px;
+    text-align: center; /* Center text for a more symmetrical look */
+}
+
+#contact h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #ff6f61; /* Retro color for the heading */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center align inputs */
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Limit max width for symmetry */
+    padding: 15px; /* Increased padding for comfort */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 2px solid #ff6f61; /* Retro border color */
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive; /* Retro font */
+    background: rgba(255, 255, 255, 0.8); /* Light background */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Inner shadow for depth */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    border-color: #00aaff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#contact-form button {
+    background: #ff6f61; /* Retro button color */
+    color: white; /* White text for button */
+    border: none;
+    padding: 15px 30px; /* Increased padding for comfort */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+    margin-top: 10px; /* Space above the button */
+}
+
+#contact-form button:hover {
+    background: #ff4c3b; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+/* this is just concept */
+/* Header Text Styles - Improved clarity */
+/* header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* White base color for better readability */
+    text-shadow: 
+        0 0 2px #fff,  /* White core for sharpness */
+        0 0 5px #ff00ff,
+        0 0 10px #ff00ff,
+        0 0 15px #ff00ff; /* Reduced blur radius for less blurriness */
+    animation: glow 1.5s ease-in-out infinite alternate;
+    letter-spacing: 2px; /* Improve letter spacing for readability */
+    font-weight: bold; /* Make text bolder */
+}
+
+header p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: #fff; /* White base color for better readability */
+    text-shadow: 
+        0 0 2px #fff,  /* White core for sharpness */
+        0 0 5px #00ff00,
+        0 0 8px #00ff00; /* Reduced blur for clearer text */
+    margin-top: 10px;
+    letter-spacing: 1px; /* Improved letter spacing */
+}
+
+/* Revised Glowing Animation - Less extreme for better readability */
+@keyframes glow {
+    from {
+        text-shadow: 
+            0 0 2px #fff,
+            0 0 5px #ff00ff,
+            0 0 8px #ff00ff;
+    }
+    to {
+        text-shadow: 
+            0 0 2px #fff,
+            0 0 7px #ff00ff,
+            0 0 10px #ff00ff,
+            0 0 15px #ff00ff;
+    }
+} */
