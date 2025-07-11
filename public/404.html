@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/placeholder.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Pralhad Neupane</title>
+    <meta
+      name="description"
+      content="Page not found. You've landed in Pralhad's basement - this page doesn't exist."
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        background: #1a1a1a;
+        color: #f3f4f6;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 32rem;
+        margin: 0 auto;
+      }
+
+      .icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        animation: bounce 2s infinite;
+      }
+
+      .error-code {
+        font-size: 4rem;
+        font-weight: bold;
+        background: linear-gradient(135deg, #3b82f6, #f3f4f6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 1.5rem;
+      }
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+        color: #9ca3af;
+        margin-bottom: 2rem;
+      }
+
+      .description {
+        color: #9ca3af;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #3b82f6;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #2563eb;
+        transform: translateY(-2px);
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        53%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40%,
+        43% {
+          transform: translateY(-15px);
+        }
+        70% {
+          transform: translateY(-5px);
+        }
+        90% {
+          transform: translateY(-2px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .error-code {
+          font-size: 3rem;
+        }
+        .title {
+          font-size: 1.25rem;
+        }
+        .subtitle {
+          font-size: 1.125rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">🏠🔍</div>
+      <h1 class="error-code">404</h1>
+      <h2 class="title">Ooops! You've landed in Pralhad's basement.</h2>
+      <p class="subtitle">This page doesn't exist.</p>
+      <p class="description">
+        Looks like you've wandered off the beaten path. Don't worry, even the
+        best developers get lost sometimes. Let's get you back to where the
+        magic happens!
+      </p>
+      <a href="/" class="btn">Back to Homepage</a>
+    </div>
+
+    <script>
+      // Redirect to React Router after a short delay to show the 404 message
+      setTimeout(() => {
+        window.location.href = "/404-react";
+      }, 3000);
+    </script>
+  </body>
+</html>
