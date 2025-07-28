@@ -37,35 +37,12 @@ const Skills = () => {
       level: 88,
     },
     {
-      name: "Next.js",
-      icon: <Zap size={32} />,
-      category: "Frontend",
-      level: 82,
-    },
-    {
       name: "JavaScript (ES6+)",
       icon: <Code size={32} />,
       category: "Language",
       level: 92,
     },
-    {
-      name: "REST APIs",
-      icon: <Server size={32} />,
-      category: "Backend",
-      level: 89,
-    },
-    {
-      name: "GraphQL",
-      icon: <GitBranch size={32} />,
-      category: "Backend",
-      level: 75,
-    },
-    {
-      name: "DevOps Basics",
-      icon: <Cloud size={32} />,
-      category: "Operations",
-      level: 70,
-    },
+
   ];
 
   const categories = [
@@ -148,15 +125,8 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "TypeScript",
               "Tailwind CSS",
               "Git",
-              "Docker",
-              "AWS",
-              "Netlify",
-              "Vercel",
-              "Figma",
-              "Postman",
               "VS Code",
             ].map((tech, index) => (
               <span
