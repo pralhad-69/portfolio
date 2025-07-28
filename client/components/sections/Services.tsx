@@ -19,7 +19,6 @@ const Services = () => {
         "Responsive Design",
         "Performance Optimization",
         "SEO Friendly",
-        "Cross-browser Compatibility",
       ],
     },
     {
@@ -29,9 +28,7 @@ const Services = () => {
         "Robust and scalable backend solutions with RESTful APIs, authentication, and database integration.",
       features: [
         "RESTful API Design",
-        "Database Architecture",
         "Authentication & Security",
-        "Third-party Integrations",
       ],
     },
     {
@@ -40,48 +37,11 @@ const Services = () => {
       description:
         "Modern, interactive user interfaces with React, Next.js, and cutting-edge CSS frameworks.",
       features: [
-        "React & Next.js",
+        "React js",
         "Component Libraries",
         "State Management",
-        "Animation & Interactions",
       ],
-    },
-    {
-      icon: <Layers size={48} />,
-      title: "Full-Stack Project Builds",
-      description:
-        "Complete project development from planning to deployment, handling both frontend and backend requirements.",
-      features: [
-        "Project Planning",
-        "MVP Development",
-        "Testing & QA",
-        "Documentation",
-      ],
-    },
-    {
-      icon: <Cloud size={48} />,
-      title: "Deployment & Hosting Setup",
-      description:
-        "Professional deployment solutions using modern platforms like Vercel, Netlify, and AWS for optimal performance.",
-      features: [
-        "CI/CD Pipelines",
-        "Domain Configuration",
-        "Performance Monitoring",
-        "SSL & Security",
-      ],
-    },
-    {
-      icon: <Code size={48} />,
-      title: "Code Review & Optimization",
-      description:
-        "Professional code auditing, performance optimization, and best practices implementation for existing projects.",
-      features: [
-        "Code Quality Analysis",
-        "Performance Optimization",
-        "Security Audit",
-        "Refactoring & Cleanup",
-      ],
-    },
+    }
   ];
 
   return (
